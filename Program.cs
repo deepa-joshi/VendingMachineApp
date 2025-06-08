@@ -1,4 +1,6 @@
-﻿namespace VendingMachineApp {
+﻿using VendingMachineApp.src;
+
+namespace VendingMachineApp {
 class Program {
     static void Main(string[] args) {
         ///start execution of vending machine program

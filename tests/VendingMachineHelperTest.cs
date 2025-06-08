@@ -1,5 +1,5 @@
 using Xunit;
-using VendingMachineApp;
+using VendingMachineApp.src;
 
 namespace VendingMachineApp.tests
 {
@@ -15,7 +15,7 @@ namespace VendingMachineApp.tests
             helper.InsertCoin("quarter");
 
             // Assert
-            Assert.Equal(0.25m, helper.CurrentAmount);
+            Assert.Equal(0.25m, helper.currentAmount);
         }
 
         [Fact]
@@ -28,7 +28,7 @@ namespace VendingMachineApp.tests
             helper.InsertCoin("invalid");
 
             // Assert
-            Assert.Equal(0.00m, helper.CurrentAmount);
+            Assert.Equal(0.00m, helper.currentAmount);
         }
 
         [Fact]
@@ -65,7 +65,7 @@ namespace VendingMachineApp.tests
             helper.SelectProduct("cola");
 
             // Assert
-            Assert.True(helper.CurrentAmount < 1.00m);
+            Assert.True(helper.currentAmount < 1.00m);
         }
 
         [Fact]
@@ -79,7 +79,7 @@ namespace VendingMachineApp.tests
             helper.SelectProduct("cola");
 
             // Assert
-            Assert.Equal(0.10m, helper.CurrentAmount); // No change
+            Assert.Equal(0.10m, helper.currentAmount); // No change
         }
 
         [Fact]
@@ -92,7 +92,7 @@ namespace VendingMachineApp.tests
             helper.SelectProduct("coffee");
 
             // Assert
-            Assert.Equal(0.00m, helper.CurrentAmount);
+            Assert.Equal(0.00m, helper.currentAmount);
         }
     }
 }

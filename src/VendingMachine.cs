@@ -1,5 +1,6 @@
 ﻿
-namespace VendingMachineApp
+
+namespace VendingMachineApp.src
 {
     public class VendingMachine
     {
