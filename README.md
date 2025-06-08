@@ -1,5 +1,8 @@
 # vending-machine
-Code for vending machine example 
+Code for vending machine example and instructions
+
+# setup
+
 
 # Dependencies
 
